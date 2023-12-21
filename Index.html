@@ -82,6 +82,18 @@
              nav a{
                 color: rgb(14, 134, 231);
              }
+                     
+        @media (max-width: 768px){
+             nav ul{
+                display:none;
+             }
+             .table{
+                width: 100%;
+                overflow-x: scroll;
+             }
+           
+        }
+      
              
           
     </style>
@@ -103,25 +115,27 @@
         <section id="personal-details">
             <div class="title">
                 <h1>Personal details</h1>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Altschool ID</th>
-                            <th>Gender</th>
-                            <th>School</th>
-                             <th class="last-border">Track</th>
-                        </tr>
-                       
-                    </thead>
-                    <tbody>
-                        <td>Aishat Muhammed</td>
-                        <td>ALT/SOE/023/2030</td>
-                        <td>Female</td>
-                        <td>School of Engineering</td>
-                        <td>Frontend</td>
-                    </tbody>
-                </table>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Altschool ID</th>
+                                <th>Gender</th>
+                                <th>School</th>
+                                <th class="last-border">Track</th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody>
+                            <td>Aishat Muhammed</td>
+                            <td>ALT/SOE/023/2030</td>
+                            <td>Female</td>
+                            <td>School of Engineering</td>
+                            <td>Frontend</td>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <section>
