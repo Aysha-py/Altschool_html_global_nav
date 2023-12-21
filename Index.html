@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>About Me</title>
+    <meta name="description" content="About Me">
+    <link rel="stylesheet" href="./styles.css"/>
+    <style>
+            *, *::before, *::after {
+            box-sizing: border-box;
+            }
+
+            * {
+            margin: 0;
+            padding: 0;
+            }
+            body{
+                padding: 20px 10px;
+                font-family: sans-serif;
+                line-height: 2;
+            }
+            nav ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-evenly;
+                border-bottom: 1px solid rgb(14, 134, 231);
+                padding-block-end: 20px;
+                cursor: pointer;
+            }
+            nav ul li:hover{
+             
+              color:  rgb(14, 134, 231);
+           
+            }
+            main{
+                width: 100%;
+                max-width: 960px;
+                margin: 0 auto;
+                margin-block-start: 20px;
+                /* text-align: center; */
+            }
+            h1{
+                color: rgb(14, 134, 231);
+                text-decoration: underline;
+            }
+           table{
+            margin: 0 auto;
+           }
+            table th, table td{              
+                padding: 10px;
+                
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin-top: 20px;
+            }
+
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+
+            th {
+                background-color: #f2f2f2;
+            }
+            .apply{
+                color:  rgb(14, 134, 231);
+                margin: 20px 0;
+                padding: 10px 0;
+                font-size: 24px;
+            }
+             .apply a{
+                color: #000;
+             }
+             section{
+                margin: 30px 0;
+             }
+             nav a{
+                color: rgb(14, 134, 231);
+             }
+             
+          
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Personal details</li>
+                <li>Reasons For joining Altschool</li>
+                <li>Achievement Plans</li>
+                <li><a href="#apply">Click to join ALTSCHOOL</a> </li>
+            </ul>
+        </nav>
+    </header>
+   
+    
+    <main>
+        <section id="personal-details">
+            <div class="title">
+                <h1>Personal details</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Altschool ID</th>
+                            <th>Gender</th>
+                            <th>School</th>
+                             <th class="last-border">Track</th>
+                        </tr>
+                       
+                    </thead>
+                    <tbody>
+                        <td>Aishat Muhammed</td>
+                        <td>ALT/SOE/023/2030</td>
+                        <td>Female</td>
+                        <td>School of Engineering</td>
+                        <td>Frontend</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div class="title">
+                <h1>Reasons For joining Altschool</h1>
+                
+                <p>Hello, my name is Aishat Muhammed and I am  currently enrolled at ALtschool Africa . My reason for
+                    for enrollment is to have access to a well-structured educational program and a
+                    well-defined roadmap, led by experienced tutors who can offer me the guidance I need to
+                    flourish as a frontend engineer.
+                </p>
+                
+                </span>
+            </div>
+        </section>
+        <section id="achievement-plans">
+            <div class="title">
+                <h1>Achievement Plans</h1>
+                <ol>
+                    <li>Become a Proficient Frontend Developer</li>
+                    <li>Build pixel-perfect, Responsive and accesible websites</li>
+                    <li>Understand the intersection between designs and coding</li>
+                    <li>Consume Api's and understand web development generally</li>
+                    <li>Thoroughlly Understand the Javascript programming language</li>
+                </ol>
+
+            </div>
+        </section>
+        <p class="apply" id="apply"><strong>If this sound like something you will like to achieve,<a href="/Form.html"> click on the link</a> to apply to Altschool Africa.</strong></p>
+    </main>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+     *, *::before, *::after {
+            box-sizing: border-box;
+            }
+
+            * {
+            margin: 0;
+            padding: 0;
+            }
+    body{
+        background-color: rgb(215, 228, 228);
+    }
+        main{
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            font-family: sans-serif;
+            box-shadow: rgba(0, 0, 0, 0.03) 0px 30px 60px;
+            background: rgb(255, 255, 255);
+            border-radius: 4px;
+            padding: 20px;
+        
+        }
+        h2{
+            font-size: 2rem;
+            color: rgb(11, 30, 75);
+            line-height: 30px;
+            margin-bottom: 10px;
+        }
+        h4{
+                font-size: 1rem;
+                color: rgb(123, 123, 123);
+                line-height: 20px;
+                margin-bottom: 25px;
+        }
+        .form-info-grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+        }
+
+        .form-info{
+            padding: 20px;
+        
+        } 
+        .form-info label{
+            display: block;
+            font-size: 1rem;
+           margin-bottom: 6px;
+        }
+        .form-info input,
+        .form-info select{
+            border: 1px solid rgb(216, 219, 223);
+            box-shadow: none;
+           height: 48px;
+           padding-inline-start: 10px;
+            border-radius: 4px;
+            outline: none;
+            color: rgb(11, 30, 75);
+            transition: all 0.3s ease 0s;
+            width: 100%; 
+        }
+        form a{
+            color: rgb(32, 84, 210);
+
+        }
+        .terms{
+            font-size: 1rem;
+            color: rgb(123, 123, 123);
+            line-height: 20px;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        label::after{
+            display: inline-block;
+            content: "*";
+            color: rgb(235, 87, 87);
+        }
+        button {
+            width: 100%;
+            padding: 12px 0px;
+            background: rgb(106, 111, 245);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+        }
+        .haveAccount{
+            font-size: 1em;
+            line-height: 20px;
+            text-align: center;
+            margin-top: 25px;
+            color: rgb(71, 71, 71);
+        }
+
+        
+        @media (max-width: 768px){
+            h2{
+                font-size: 1.3rem;
+            }
+            .form-info-grid{
+            grid-template-columns: 1fr;
+    
+            }  
+            .terms{
+                    font-size: 0.9rem;
+            } 
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <div class="title">
+            <h2>Application Form</h2>
+            <h4>Fill in your details</h4>
+        </div>
+        <form>
+                <div class="form-info-grid">
+                    <div class="form-info">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Enter First Name" required/>
+                    </div>
+                    <div class="form-info">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name" required/>
+                    </div>
+                    <div class="form-info">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" required>
+                            <option>Select Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select >
+                    </div>
+                    <div class="form-info">
+                        <label for="dateofbirth">Date of Birth</label>
+                        <input type="date" name="dateofbirth" class="date" id="dateofbirth" placeholder="DD/MM/YY" required/>
+                    </div>
+                    <div class="form-info">
+                        <label for="email">Email Address</label>
+                        <input type="text" name="email" id="email" placeholder="Enter Email Address" required/>
+                    </div>
+                   <div class="form-info">
+                        <label for="education">Education Level</label>
+                        <select name="education" id="education" required>
+                            <option>Select Level of Education</option>
+                            <option>Bsc</option>
+                            <option>Msc</option>
+                            <option>Diploma</option>
+                            <option>Doctorate(Phd)</option>
+                            <option>High School/Secondary School</option>
+                            <option>Under Graduate</option>
+                            <option>Junior / Middle school</option>
+                            <option>Post Graduate</option>
+                        </select >
+                    </div>
+                     <div class="form-info">
+                        <label for="countryOfResidence">Country</label>
+                        <select name="countryOfResidence" id="countryOfResidence">
+                            <option>Select your Country</option>
+                            <option>Level 1</option>
+                            <option>Level 2</option>
+                        </select>
+                    </div>
+                    <div class="form-info">
+                        <label for="cityOfResidence">State/City of Residence</label>
+                        <input type="text" name="cityOfResidence" id="cityOfResidence" placeholder="Enter your state of residence"/>
+                    </div>
+                    <div class="form-info">
+                        <label for="employmentStatus">Employment Status</label>
+                        <select name="employmentStatus" id="employmentStatus">
+                            <option>Select employment status</option>
+                            <option>Employed</option>
+                            <option>Unemployed</option>
+                            <option>Self Employed</option>
+                        </select>
+                    </div>
+                    <div class="form-info">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Phone Number"/>
+                    </div>
+                    <div class="form-info">
+                        <label for="chooseSchool">Choose School</label>
+                        <select name="chooseSchool" id="chooseSchool">
+                            <option>Choose School</option>
+                            <option>School of Creative Economy</option>
+                            <option>School of Business</option>
+                        </select>
+                    </div>
+                    <div class="form-info">
+                        <label for="studyCourse">Choose Course of Study</label>
+                        <select name="studyCourse" id="studyCourse">
+                            <option>Select Course</option>
+                            <option>High Impact Selling: From Prospecting to closing</option>
+                            <option>School of Business</option>
+                        </select>
+                    </div>
+                   
+                    <div class="form-info">
+                        <label for="hearAboutUs">How did you hear about us?</label>
+                        <select name="hearAboutUs" id="hearAboutUs">
+                            <option>How did you hear about us?</option>
+                            <option>Facebook</option>
+                            <option>LinkedIn</option>
+                            <option>Youtube</option>
+                            <option>Friend</option>
+                            <option>WhatsApp</option>
+                            <option>Instagram</option>
+                            <option>BillBoard</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-info">
+                        <label for="scholarship">Schorlarship/Discount Code [optional]</label>
+                        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Scholarship or student ID or discount codes"/>
+                    </div>
+                   
+                </div>
+                
+                
+               <h4 class="terms">By clicking continue, I agree to &nbsp;<a href="#" target="__blank">Terms of Use</a>&nbsp;and acknowledge that I <br> have read the &nbsp;<a href="#" target="__blank">Privacy Policy.</a></h4>
+                <button type="submit" class="submitButton"><span>Proceed</span></button>
+                <p class="haveAccount">Already have an account? <a href="#">Sign In</a></p>
+                    
+            </form>
+            
+    </main>
+</body>
+</html>
